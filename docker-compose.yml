@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  chatapp:
+    image: 'abe6191990/nodejschatapp2:latest'
+    environment:
+      - "PORT:3700"
+    ports:
+      - "80:3700"
+    volumes:
+      - ./:/app
+      
